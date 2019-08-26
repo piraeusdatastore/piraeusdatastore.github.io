@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-bottom: 24px;
   padding: 0 36px;
-  height: 88px;
+  height: 66px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
   #top #top-brand {
     margin-right: 10px; }
@@ -214,8 +214,8 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: underline; }
 
 #hero {
-  padding-top: 48px;
-  padding-bottom: 56px;
+  padding-top: 38px;
+  padding-bottom: 36px;
   text-align: center; }
   #hero h1 {
     max-width: 880px;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 48px; } }
 
 #action-buttons {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   text-align: center; }
   #action-buttons button,
   #action-buttons .button {
@@ -1026,17 +1026,53 @@ tr.border-none td {
 #footer {
   display: flex;
   border-top: 1px solid #eee;
-  margin: 104px 0;
+  margin: 10px 0;
   padding: 0 28px;
   padding-top: 24px;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5); }
   #footer p {
-    order: 1; }
+    order: 1; 
+    font-size: 14px; }
   #footer nav {
     order: 2;
-    margin-left: auto; }
-  #footer nav ul {
+    margin-left: auto;
+    display: flex; }
+  #footer nav #daocloud {
+    background: url(../img/contributor/daoclou_nor.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+    width: 70px;
+    height: 14px;
+    display: block;
+  }
+  #footer nav #daocloud:hover {
+    background: url(../img/contributor/daocloud_hov.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+    width: 70px;
+    height: 14px;
+    display: block;
+  }
+  #footer nav #linbit {
+    margin-right: 30px;
+    background: url(../img/contributor/linbit_nor.png) no-repeat;
+    background-position: center;
+    background-size: 50px;
+    width: 50px;
+    height: 14px;
+    display: block;
+  }
+  #footer nav #linbit:hover {
+    margin-right: 30px;
+    background: url(../img/contributor/linbit_hov.png) no-repeat;
+    background-position: center;
+    background-size: 50px;
+    width: 50px;
+    height: 14px;
+    display: block;
+  }
+  /* #footer nav ul {
     display: flex; }
   #footer nav ul li {
     margin-left: 20px; }
@@ -1047,7 +1083,7 @@ tr.border-none td {
     text-decoration: none; }
   #footer nav ul li a:hover {
     color: #000;
-    text-decoration: underline; }
+    text-decoration: underline; } */
 
 @media (max-width: 768px) {
   #top {

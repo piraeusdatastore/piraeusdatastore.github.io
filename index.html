@@ -77,7 +77,7 @@
     <div id="top-brand">
       <a href="/" title="home">
         <img alt="Baseline" height="46" src="/img/logo.png" width="46" style="float: left; margin-right: 10px;">
-     </a>
+      </a>
     </div>
     <nav id="top-nav-main">
       <ul>
@@ -114,7 +114,7 @@
   <a href="https://raw.githubusercontent.com/piraeus-datastore/piraeus-operator.yaml" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">
     <div class="message focus" data-component="message">
       <a class="button inverted small " href="https://docs.piraeus.io" >ONE LINE DEPLOY</a>
-      <span>$ kubectl apply -f https://raw.githubusercontent.com/piraeus-datastore/piraeus-operator.yaml</span>
+      <span class="text">$ kubectl apply -f https://raw.githubusercontent.com/piraeus-datastore/piraeus-operator.yaml</span>
     </div>
   </a>
 
@@ -126,7 +126,7 @@
           <img alt="Baseline" height="48" src=/img/kube/high-available.png width="48">
         </figure>
         <h3>High Available</h3>
-        <p>Supports 1/2/3 replica numbers and online switch between them. Piraeus place replicas intelligently across all nodes to balance the workload.</p>
+        <p>Supports 1/2/3 replica numbers and online switch between them. Piraeus place the replicas intelligently across the nodes to balance the workload.</p>
       </div>
       
       <div class="col col-4 item">
@@ -142,7 +142,7 @@
           <img alt="Baseline" height="48" src=/img/kube/simple.png width="48">
         </figure>
         <h3>Simple</h3>
-        <p>Manages data accessibility and availability without the need to integrate a complex storage API. All the configurations are explicit and  human-readable</p>
+        <p>Manages data accessibility and availability without the need to integrate a complex storage API. All the configurations are explicit and human-readable.</p>
       </div>
       
       <div class="col col-4 item">
@@ -150,7 +150,7 @@
           <img alt="Baseline" height="48" src=/img/kube/high-performance.png width="48">
         </figure>
         <h3>High Performance</h3>
-        <p>DRBD-9 has great data replication efficiency. It provides synchronous,semi-synchronous and asynchronous replication schemes, and also supports RDMA for high-speed across-node connection. .</p>
+        <p>DRBD-9 has great data replication efficiency. It provides synchronous,semi-synchronous and asynchronous replication schemes, and also supports RDMA for high-speed across-node connection.</p>
       </div>
       
       <div class="col col-4 item">
@@ -158,7 +158,7 @@
           <img alt="Baseline" height="48" src=/img/kube/cloud-agnostic.png width="48">
         </figure>
         <h3>Cloud Agnostic</h3>
-        <p>Piraeus can run on all kinds of storage medium: RAID, SAN, NAS or EBS. It unifies storage system across different clouds, no matter it is public or private.</p>
+        <p>Piraeus can run on all kinds of storage medium: RAID, SAN, NAS or EBS. It unifies storage system across different clouds, both public and private.</p>
       </div>
       
       <div class="col col-4 item">
@@ -166,7 +166,7 @@
           <img alt="Baseline" height="48" src=/img/kube/secure.png width="48">
         </figure>
         <h3>Secure</h3>
-        <p>Fully supports SSL and LDAP. Also provides data encryption at DRBD level. Integrates key management with KVDBs, AWS-KMS and Azure Key-Vault.</p>
+        <p>Fully supports OpenSSL encryption and LDAP authentication. Also provides data encryption at DRBD level. Integrates secret-key management with KVDB, AWS-KMS and Azure Key-Vault.</p>
       </div>
       
     </div>
@@ -175,28 +175,12 @@
 </div>
 </main>
   <footer>   <footer id="footer">
-    <nav>
-      <ul>
-        
-        <li>
-          <a href="/blog/">Blog</a>
-        </li>
-        
-        <li>
-          <a href="https://www.linbit.com/en/">Company</a>
-        </li>
-        
-        <li>
-          <a href="https://docs.piraeus.io">Docs</a>
-        </li>
-        
-        <li>
-          <a href="/faq/">Faq</a>
-        </li>
-        
-      </ul>
-    </nav>
+    
     <p>&copy; Licence Apache.</p>
+    <nav>
+      <a id="linbit" href="https://www.linbit.com/en/"></a>
+      <a id="daocloud" href="https://www.daocloud.io/"></a>
+    </nav>
   </footer> </footer>
 
 

@@ -29,8 +29,8 @@ audio {
 
 img,
 video {
-  height: 64px;
-  width: 64px; }
+  height: 54px;
+  width: 54px; }
 
 svg {
   max-height: 100%; }
@@ -2010,7 +2010,7 @@ button:hover,
   padding: 1rem;
   padding-right: 2.5em;
   padding-bottom: .75rem;
-  margin-bottom: 24px;
+  margin-bottom: 100px;
   position: relative; }
   .message a {
     color: inherit; }
@@ -2046,6 +2046,9 @@ button:hover,
 
 .message.inverted {
   background: #fff; }
+
+.message.text {
+  font-size: 15px; }
 
 .modal-box {
   position: fixed;
