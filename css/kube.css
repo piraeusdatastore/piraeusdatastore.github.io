@@ -1043,7 +1043,6 @@ button:hover,
     border-color: rgba(28, 134, 242, 0.5); }
 
 .button.inverted {
-  margin-left: 40px;
   color: #000;
   background-color: #fff; }
   .button.inverted:hover {
