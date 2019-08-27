@@ -192,8 +192,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
     border: 1px solid rgba(28, 134, 242, 0.5); }
     #subnav .action-button a:hover {
-      background: #1c86f2;
-      border-color: #1c86f2;
+      background: #3b70e0;
+      border-color: #3b70e0;
       color: #fff;
       text-decoration: none; }
   #subnav form {
@@ -1055,7 +1055,7 @@ tr.border-none td {
     display: block;
   }
   #footer nav #linbit {
-    margin-right: 30px;
+    margin-right: 20px;
     background: url(../img/contributor/linbit_nor.png) no-repeat;
     background-position: center;
     background-size: 50px;
@@ -1064,7 +1064,7 @@ tr.border-none td {
     display: block;
   }
   #footer nav #linbit:hover {
-    margin-right: 30px;
+    margin-right: 20px;
     background: url(../img/contributor/linbit_hov.png) no-repeat;
     background-position: center;
     background-size: 50px;
