@@ -831,7 +831,7 @@ body.page-account #hero {
   text-align: center; }
   #kube-features h3 {
     margin-top: 0; 
-    text-align: left;
+    text-align: center;
   }
   #kube-features .row:first-child {
     padding-bottom: 32px;
@@ -839,7 +839,7 @@ body.page-account #hero {
   #kube-features p {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.75); 
-    text-align: left;}
+    text-align: center;}
   #kube-features .item:nth-of-type(n+4) {
     margin-top: 40px; }
 

@@ -64,9 +64,10 @@ float：left；
 .detail-1-right img{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 85%;
-    height: 85%;
+    left: -15%;
+    width: 100%;
+    height: auto;
+
 }
 
 .detail-2{
@@ -91,8 +92,8 @@ float：left；
     position: absolute;
     top: 0;
     left: 0;
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: auto;
 }
 
 .detail-1-left p{
@@ -183,6 +184,6 @@ vertical-align: middle;
     padding: 3px 30px 3px 30px;
     line-height: 35px;
 }
-.item-figure{
+/* .item-figure{
     text-align: left;
-}
+} */
