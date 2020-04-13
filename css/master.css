@@ -214,8 +214,8 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: underline; }
 
 #hero {
-  padding-top: 38px;
-  padding-bottom: 36px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center; }
   #hero h1 {
     max-width: 880px;
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #000; }
     #hero p a:hover {
       color: rgba(0, 0, 0, 0.6); }
-    #hero p:before {
+    /* #hero p:before {
       position: absolute;
       content: '';
       width: 40px;
@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
       top: 0;
       left: 50%;
       margin-left: -20px;
-      background: #ff3366; }
+      background: #ff3366; } */
 
 #intro {
   margin-top: 56px;
@@ -336,7 +336,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin: auto;
-  max-width: 1128px; }
+  max-width: 1128px;
+}
 
 body.docs #main,
 body.grafs-index #main,
@@ -829,15 +830,17 @@ body.page-account #hero {
   margin-top: 60px;
   text-align: center; }
   #kube-features h3 {
-    margin-top: 0; }
+    margin-top: 0; 
+    text-align: center;
+  }
   #kube-features .row:first-child {
     padding-bottom: 32px;
     margin-bottom: 64px; }
   #kube-features p {
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.75); }
+    color: rgba(0, 0, 0, 0.75); 
+    text-align: center;}
   #kube-features .item:nth-of-type(n+4) {
-    padding: 0 24px;
     margin-top: 40px; }
 
 #kube-faq {
@@ -1039,17 +1042,17 @@ tr.border-none td {
     margin-left: auto;
     display: flex; }
   #footer nav #daocloud {
-    background: url(../img/contributor/daoclou_nor.png) no-repeat;
+    background: url(../img/contributor/daocloud_nor1.png) no-repeat;
     background-position: center;
-    background-size: 70px;
+    background-size: 84px;
     width: 70px;
     height: 14px;
     display: block;
   }
   #footer nav #daocloud:hover {
-    background: url(../img/contributor/daocloud_hov.png) no-repeat;
+    background: url(../img/contributor/daocloud_hov1.png) no-repeat;
     background-position: center;
-    background-size: 70px;
+    background-size: 84px;
     width: 70px;
     height: 14px;
     display: block;
