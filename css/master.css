@@ -214,8 +214,8 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: underline; }
 
 #hero {
-  padding-top: 38px;
-  padding-bottom: 36px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center; }
   #hero h1 {
     max-width: 880px;
