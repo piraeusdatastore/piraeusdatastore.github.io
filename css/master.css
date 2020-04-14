@@ -1042,7 +1042,7 @@ tr.border-none td {
     margin-left: auto;
     display: flex; }
   #footer nav #daocloud {
-    background: url(../img/contributor/daocloud_nor1.png) no-repeat;
+    background: url(../img/contributor/daocloud_nor-1.png) no-repeat;
     background-position: center;
     background-size: 84px;
     width: 70px;
@@ -1050,7 +1050,7 @@ tr.border-none td {
     display: block;
   }
   #footer nav #daocloud:hover {
-    background: url(../img/contributor/daocloud_hov1.png) no-repeat;
+    background: url(../img/contributor/daocloud_hov-1.png) no-repeat;
     background-position: center;
     background-size: 84px;
     width: 70px;
