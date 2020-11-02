@@ -3,20 +3,31 @@ entries:
   piraeus:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2020-11-02T17:02:01.908141+08:00"
+    created: "2020-11-02T17:17:45.032994943+08:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: ""
+      version: 0.7.4
+    - condition: csi-snapshotter.enabled
+      name: csi-snapshotter
+      repository: ""
+      version: 1.0.0
     description: A Helm chart for Piraeus Operator
-    digest: 1146d0dfc68c9d2c9b128b2206e1f97dc5c6e59b62bc6bf18b075acc7214ae66
+    digest: 045cfde44e5ea04ca69ead8615a6430320b0d4385ff74b9bd746e706fa487b82
     name: piraeus
+    type: application
     urls:
     - piraeus-1.1.0.tgz
     version: 1.1.0
   pv-hostpath:
   - apiVersion: v1
-    created: "2020-11-02T17:02:01.908554+08:00"
+    appVersion: 0.2.1
+    created: "2020-11-02T17:17:45.110451074+08:00"
     description: Hostpath volumes for etcd persistence
-    digest: 20c06359f4c72af9ade33e5802677ab5ab0977bfc1e302f5e3ec5de42836de5d
+    digest: d0a2d18c32db6143fab356d063d0c923450528fadf4c57df680a50e6240e2c48
     name: pv-hostpath
     urls:
-    - pv-hostpath-0.2.0.tgz
-    version: 0.2.0
-generated: "2020-11-02T17:02:01.899613+08:00"
+    - pv-hostpath-0.2.1.tgz
+    version: 0.2.1
+generated: "2020-11-02T17:17:44.910568656+08:00"
