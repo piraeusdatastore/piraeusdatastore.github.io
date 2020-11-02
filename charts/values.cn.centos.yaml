@@ -1,31 +1,32 @@
 global:
   imagePullPolicy: IfNotPresent # empty pull policy means k8s default is used ("always" if tag == ":latest", "ifnotpresent" else)
+  setSecurityContext: false # Force non-privileged containers to run as non-root users
 # Dependency charts
 etcd:
   persistentVolume:
     enabled: true
     storage: 1Gi
-  replicas: 1 # How many instances of etcd will be added to the initial cluster.
+  replicas: 1  # How many instances of etcd will be added to the initial cluster.
   resources: {} # resource requirements for etcd containers
   image:
     repository: daocloud.io/piraeus/etcd
-    tag: v3.4.9
+    tag: v3.4.13
 csi-snapshotter:
   enabled: true # <- enable to add k8s snapshotting CRDs and controller. Needed for CSI snapshotting
   image: daocloud.io/piraeus/snapshot-controller:v2.1.0
-  replicas: 1
+  replicas: 3
   resources: {} # resource requirements for the cluster snapshot controller.
 stork:
   enabled: true
-  storkImage: daocloud.io/piraeus/stork:latest
+  storkImage: daocloud.io/piraeus/stork:2.5.0
   schedulerImage: daocloud.io/piraeus/kube-scheduler-amd64
-  schedulerTag: ""
-  replicas: 1
+  schedulerTag: "v1.18.6"
+  replicas: 3
   storkResources: {} # resources requirements for the stork plugin containers
   schedulerResources: {} # resource requirements for the kube-scheduler containers
 csi:
   enabled: true
-  pluginImage: daocloud.io/piraeus/piraeus-csi:v0.9.0
+  pluginImage: daocloud.io/piraeus/piraeus-csi:v0.9.1
   csiAttacherImage: daocloud.io/piraeus/csi-attacher:v2.2.0
   csiNodeDriverRegistrarImage: daocloud.io/piraeus/csi-node-driver-registrar:v1.3.0
   csiProvisionerImage: daocloud.io/piraeus/csi-provisioner:v1.6.0
@@ -39,30 +40,43 @@ csi:
   resources: {}
 priorityClassName: ""
 drbdRepoCred: drbdiocred # <- Specify the kubernetes secret name here
-linstorHttpsControllerSecret: "" # <- name of secret containing linstor server certificates+key. See docs/security.md
-linstorHttpsClientSecret: "" # <- name of secret containing linstor client certificates+key. See docs/security.md
+# linstorHttpsControllerSecret: piraeus-https-controller-certs # <- name of secret containing linstor server certificates+key. See docs/security.md
+# linstorHttpsClientSecret: piraeus-https-client-certs # <- name of secret containing linstor client certificates+key. See docs/security.md
+psp:
+  privilegedRole: ""
+  unprivilegedRole: ""
 operator:
   replicas: 1 # <- number of replicas for the operator deployment
-  image: daocloud.io/piraeus/piraeus-operator:v1.0.0
+  image: daocloud.io/piraeus/piraeus-operator:v1.1.0
   resources: {}
   controller:
-    controllerImage: daocloud.io/piraeus/piraeus-server:v1.7.1
+    replicas: 1
+    controllerImage: daocloud.io/piraeus/piraeus-server:v1.9.0
     luksSecret: ""
     dbCertSecret: ""
     dbUseClientCert: false
-    sslSecret: ""
-    affinity: {}
+    # sslSecret: piraeus-ssl-controller-certs
+    affinity: 
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: role
+              operator: In
+              values:
+              - piraeus-controller
+          topologyKey: kubernetes.io/hostname
     tolerations: []
     resources: {}
   satelliteSet:
-    satelliteImage: daocloud.io/piraeus/piraeus-server:v1.7.1
+    satelliteImage: daocloud.io/piraeus/piraeus-server:v1.9.0
     storagePools: null
-    sslSecret: ""
+    # sslSecret: piraeus-ssl-node-certs
     automaticStorageType: None
     affinity: {}
     tolerations: []
     resources: {}
-    # kernelModuleInjectionImage: daocloud.io/piraeus/drbd9-bionic:v9.0.24
-    kernelModuleInjectionImage: daocloud.io/piraeus/drbd9-centos7:v9.0.24
+    # kernelModuleInjectionImage: daocloud.io/piraeus/drbd9-bionic:v9.0.25
+    kernelModuleInjectionImage: daocloud.io/piraeus/drbd9-centos7:v9.0.25
     kernelModuleInjectionMode: Compile
     kernelModuleInjectionResources: {}
