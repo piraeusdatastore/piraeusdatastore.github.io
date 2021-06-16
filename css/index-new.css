@@ -102,8 +102,8 @@ body.home .hide-sm {
     svg = svg.replace(/>/g,"%3E")
  */
 .wave {
-    animation: wave 5.5s infinite linear;
-    -webkit-animation: wave 5.5s infinite linear;
+    animation: wave 16.5s infinite linear;
+    -webkit-animation: wave 16.5s infinite linear;
     width: 400vw;
     height: 200px;
     min-width: 600px;
@@ -113,8 +113,8 @@ body.home .hide-sm {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22600%22%20height=%22200%22%20viewBox=%220%200%20600%20200%22%3E%3Cg%20transform=%22rotate(180%20300%201000)%20scale(1%201)%22%3E%3Cpath%20fill-rule=%22evenodd%22%20clip-rule=%22evenodd%22%20fill=%22%231765FF%22%20d=%22M0%202000c123%200%20177-49.866%20300-49.866S474%202000%20600%202000V0H0v2000z%22/%3E%3C/g%3E%3C/svg%3E');
 }
 #wave02 {
-    animation: wave 7s infinite linear;
-    -webkit-animation: wave 7s infinite linear;
+    animation: wave 21s infinite linear;
+    -webkit-animation: wave 21s infinite linear;
     margin-top: -180px;
     margin-left: -400px;
 }
@@ -126,15 +126,15 @@ body.home .hide-sm {
     height: auto;
 }
 #wave03 {
-    animation: wave 4.5s infinite linear;
-    -webkit-animation: wave 4.5s infinite linear;
+    animation: wave 13.5s infinite linear;
+    -webkit-animation: wave 13.5s infinite linear;
     position: absolute;
     bottom: -50px;
     left: -200px;
 }
 #wave04 {
-    animation: wave 6s infinite linear;
-    -webkit-animation: wave 6s infinite linear;
+    animation: wave 18s infinite linear;
+    -webkit-animation: wave 18s infinite linear;
     position: absolute;
     bottom: -60px;
     left: -500px;
