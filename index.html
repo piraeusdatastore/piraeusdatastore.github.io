@@ -29,192 +29,212 @@
 </head>
 
 
-<body class="page-kube">
+<body class="page-kube home">
 
-  <header> <div class="show-sm">
-    <div id="nav-toggle-box">
-      <div id="nav-toggle-brand">
-        <a href="/">
+  <header>
+    <div class="show-sm">
+      <div id="nav-toggle-box">
+        <div id="nav-toggle-brand">
+          <a href="/">
+            <img alt="Baseline" height="46" src="/img/logo.png" width="46" style="float: left; margin-right: 10px;">
+          </a>
+        </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+      </div>
+    </div>
+    <div class="hide-sm" id="top">
+      <div id="top-brand">
+        <a style="text-decoration:none; color:#000;" href="/" title="home">
           <img alt="Baseline" height="46" src="/img/logo.png" width="46" style="float: left; margin-right: 10px;">
         </a>
-      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
-    </div>
-  </div>
-  <div class="hide-sm" id="top">
-    <div id="top-brand">
-      <a style="text-decoration:none; color:#000;" href="/" title="home">
-        <img alt="Baseline" height="46" src="/img/logo.png" width="46" style="float: left; margin-right: 10px;"> 
-        <b>Piraeus</b>
-      </a>
-    </div>
-    <nav id="top-nav-main">
-    <ul>    
-      <li>
-        <a href="https://github.com/piraeusdatastore/piraeus-operator/blob/master/README.md" >Document</a>
-      </li>
-      <li><a href="https://github.com/piraeusdatastore" >Community</a>
-      </li>
-      <li><a href="https://github.com/cncf/foundation/blob/master/code-of-conduct.md" >Code Of Conduct</a>
-      </li>
-      <li><a href="https://www.linbit.com/blog/" >Blog</a>
-      </li>
-          <a href="https://github.com/piraeusdatastore/piraeus-operator" >QuickStart</a>
+      </div>
+      <nav id="top-nav-main">
+      <ul>    
+        <li>
+          <a href="https://github.com/piraeusdatastore/piraeus-operator/blob/master/README.md" >Document</a>
         </li>
-    </ul>
-    </nav>
-    <!-- <nav id="top-nav-extra"> 
-      <ul>
-          
+        <li><a href="https://github.com/piraeusdatastore" >Community</a>
+        </li>
+        <li><a href="https://github.com/cncf/foundation/blob/master/code-of-conduct.md" >Code Of Conduct</a>
+        </li>
+        <li><a href="https://www.linbit.com/blog/" >Blog</a>
+        <li><a href="https://github.com/piraeusdatastore/piraeus-operator" >QuickStart</a></li>
       </ul>
-    </nav> -->
-  </div>
- </header>
+      </nav>
+      <!-- <nav id="top-nav-extra"> 
+        <ul>
+            
+        </ul>
+      </nav> -->
+    </div>
+  </header>
 
   <main>
-  <div id="main">
-  <div id="hero">
-    <div class="main-title">
-    <img src="/img/logo-new.png">
-    <h2>Cloud-Native Datastore for Kubernetes</h2>
-  </div>
-    <p>We make local persistent volumes dynamic, clustered and high-available. 100% free and opensource.</p>
-  </div>
-
-
-  <div id="action-buttons">
-    <a class="button primary big" href="https://github.com/piraeusdatastore/piraeus-operator">Try it now</a>
-    <!-- <a class="button outline big" href="https://github.com/piraeusdatastore/piraeus" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
-    <p>100% Open Source, 100% Cloud Native</p> -->
-  </div>
-
-  <!-- <a href="https://raw.githubusercontent.com/piraeusdatastore/piraeus/master/deploy/all.yaml" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">
-    <div class="message focus" data-component="message">
-      <img src="/img/kube/k8s-logo.jpg" style="width:40px;height:40px;margin-right: 10px;position:absolute;right:10px;top:14px;">
-      <a class="button inverted small " href="https://github.com/piraeusdatastore/piraeus/blob/master/README.md" >DEPLOY</a>
-      <span class="text">$ kubectl apply -f https://raw.githubusercontent.com/piraeusdatastore/piraeus/master/deploy/all.yaml</span>
-    </div>
-  </a> -->
-
-  <div id="details">
- 
-    <div class="detail-1">
-      <div class="detail-1-right">
-        <img src="/img/02.png">
+    <div id="main">
+      <div id="header">
+        <div id="header-main" class="max-width-main normal-padding center">
+          <div class="main-title">
+            <h2>Piraeus</h2>
+          </div>
+          <p class="main-title-brief">An easy-using cloud native datastore for Kubernetes. 100% open source, run anywhere.</p>
+          <div id="header-main-buttons">
+            <a class="button primary" href="https://github.com/piraeusdatastore/piraeus-operator">TRY IT NOW</a>
+            <a class="button normal" href="https://github.com/piraeusdatastore/piraeus-operator/blob/master/README.md" >DOCUMENTATION</a>
+            <!-- <a class="button outline big" href="https://github.com/piraeusdatastore/piraeus" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
+            <p>100% Open Source, 100% Cloud Native</p> -->
+          </div>
+          <a class="link" href="https://github.com/piraeusdatastore/piraeus-operator/blob/master/README.md" >Read Documentation</a>
+        </div>
+        <div id="header-image">
+          <div id="wave01" class="wave"></div>
+          <div id="wave02" class="wave"></div>
+          <img id="Banner" src="/img/homepage/Banner.png">
+          <div id="wave03" class="wave"></div>
+          <div id="wave04" class="wave"></div>
+        </div>
       </div>
-      <div class="detail-1-left">
-        <h3>Why Piraeus?</h3>
-        <p>Piraeus is a cloud-native storage system that empowers Kubernetes Local Persistent Volumes with dynamic provisioning, resource management, and high-availability. It deploys and scales out automatically within Kubernetes nodes. With Piraeus,
-          Kubernetes workloads can now consume high performance local storage using the same volume APIs that app developers have become accustomed to.</p>
-        <div>
-                <a class="buttonlink e2" href="https://github.com/piraeusdatastore">
-                  <img class="link" src="/img/GitHub-01.svg" alt="">
-                  <span class="text">GitHub</span>
-                </a>
 
-                <a class="buttonlink e1" href=" https://piraeus-datastore.slack.com/join/shared_invite/enQtOTM4OTk3MDcxMTIzLTM4YTdiMWI2YWZmMTYzYTg4YjQ0MjMxM2MxZDliZmEwNDA0MjBhMjIxY2UwYmY5YWU0NDBhNzFiNDFiN2JkM2Q">
-                  <img class="link" src="/img/slack-01.svg" alt="">
-                  <span class="text">Slack</span>
-                </a>
-        </div>
-        </div>
-  </div>
 
-  <div class="detail-2">
-    <div class="detail-2-left">
-    <img src="/img/03.png">
-    </div>
-    <div class="detail-2-right">
-    <h3>Easy as Plug & Play</h3>
-    <p>With a simple “kubectl apply”, you will have a storage system up and running in a few minutes, which comes with an out-of-box storage pool 
-      and corresponding storage-class ready for test !</p>
-      <div>
-        <a class="buttonlink e2 e3" href="https://github.com/piraeusdatastore/piraeus-operator">
-          <span class="text">Get start</span>
-        </a>
-      
+      <!-- <a href="https://raw.githubusercontent.com/piraeusdatastore/piraeus/master/deploy/all.yaml" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">
+        <div class="message focus" data-component="message">
+          <img src="/img/kube/k8s-logo.jpg" style="width:40px;height:40px;margin-right: 10px;position:absolute;right:10px;top:14px;">
+          <a class="button inverted small " href="https://github.com/piraeusdatastore/piraeus/blob/master/README.md" >DEPLOY</a>
+          <span class="text">$ kubectl apply -f https://raw.githubusercontent.com/piraeusdatastore/piraeus/master/deploy/all.yaml</span>
+        </div>
+      </a> -->
+
+      <div id="details">
+     
+        <div class="detail-1 text-center">
+          <h3>Why Piraeus?</h3>
+          <p class="center">Piraeus is a cloud-native storage system that empowers Kubernetes Local Persistent Volumes with dynamic provisioning, resource management, and high-availability. It deploys and scales out automatically within Kubernetes nodes. With Piraeus, Kubernetes workloads can now consume high performance local storage using the same volume APIs that app developers have become accustomed to.</p>
         </div>
 
+        <div class="detail-2 max-width-main normal-padding center clearfix">
+          <div class="relative">
+            <div class="detail-2-left">
+              <h3>Easy as Plug & Play</h3>
+              <p>With a simple “kubectl apply”, you will have a storage system up and running in a few minutes, which comes with an out-of-box storage pool and corresponding storage-class ready for test!
+              </p>
+            </div>
+            <div class="detail-2-right center">
+              <img src="/img/homepage/cmd.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="kube-features" class="max-width-main normal-padding center">
+        <div class="row gutters text-left">
+          <div class="col col-4 item active">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/high-available.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">High Available</h3>
+            <p>Supports 1/2/3 replica numbers for persistent volumes. Piraeus place the replicas intelligently across the nodes to balance the workload.</p>
+          </div>
+          <div class="col col-4 item">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/linux-native.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">Linux Native</h3>
+            <p>DRBD, as the core component, has been a part of Linux kernel for 10 years. LVM, as the backend, is also a Linux cornerstone. There is no un-battle-tested new stack in data plane.</p>
+          </div>
+          <div class="col col-4 item">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/simple.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">Simple</h3>
+            <p>Manages data accessibility and availability without the need to integrate a complex storage API. All the configurations are explicit and human-readable.</p>
+          </div>
+          <div class="col col-4 item">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/high-performance.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">High Performance</h3>
+            <p>DRBD-9 has great data replication efficiency. It provides synchronous,semi-synchronous and asynchronous replication schemes, and also supports RDMA for high-speed across-node connection.</p>
+          </div>
+          <div class="col col-4 item">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/cloud-agnostic.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">Cloud Agnostic</h3>
+            <p>Piraeus can run on all kinds of storage medium: RAID, SAN, NAS or EBS. It unifies storage system across different clouds, both public and private.</p>
+          </div>
+          <div class="col col-4 item">
+            <figure class="item-figure">
+              <img alt="icon" src="/img/kube/secure.png">
+            </figure>
+            <div class="more-btn"></div>
+            <h3 class="clearfix">Secure</h3>
+            <p>Fully supports OpenSSL encryption and LDAP authentication. Also provides data encryption at DRBD level. Integrates secret-key management with KVDB, AWS-KMS and Azure Key-Vault.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="partners" class="max-width-main normal-padding center">
+        <div class="row gutters text-left">
+          <div id="partners-left" class="col col-8 item">
+            <div class="item-inner">
+              <div class="partners-title">Originally developed by</div>
+              <div class="flex">
+                <div class="col col-4 item">
+                  <img class="partners-logo" alt="icon" src="/img/homepage/Company-Logo-DaoCloud.png">
+                </div>
+                <div class="col col-4 item">
+                  <img class="partners-logo" alt="icon" src="/img/homepage/Company-Logo-Linbit.png">
+                </div>
+                <div class="col col-4 item">
+                  <img class="partners-logo" alt="icon" src="/img/homepage/Company-Logo-SPDBF.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-4 item">
+            <div id="partners-right" class="item-inner">
+              <div class="partners-title">Piraeus is a CNCF sandbox project</div>
+              <div class="partners-img-wrapper">
+                <img class="partners-logo" alt="icon" src="/img/homepage/Company-Logo-CNCF.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
+  </main>
 
-
-  
-  </div>
-  </div>
-<!-- 
-  style="font-size:24px;font-weight：700;" -->
-
-  <div id="kube-features">
-    <h2 class="kube-features-title features-title" >Key Features</h2>
-    <div class="row gutters">
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/high-available.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>High Available</h3>
-        <p>Supports 1/2/3 replica numbers for persistent volumes. Piraeus place the replicas intelligently across the nodes to balance the workload.</p>
+  <footer>
+    <footer id="footer">
+      <div class="max-width-main normal-padding center">
+        <p>© 2019-2021 Piraeus Authors</p>
+        <p>© 2021 The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark Usage page.</p>
       </div>
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/linux-native.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>Linux Native</h3>
-        <p>DRBD, as the core component, has been a part of Linux kernel for 10 years. LVM, as the backend, is also a Linux cornerstone. There is no un-battle-tested new stack in data plane.</p>
-      </div>
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/simple.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>Simple</h3>
-        <p>Manages data accessibility and availability without the need to integrate a complex storage API. All the configurations are explicit and human-readable.</p>
-      </div>
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/high-performance.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>High Performance</h3>
-        <p>DRBD-9 has great data replication efficiency. It provides synchronous,semi-synchronous and asynchronous replication schemes, and also supports RDMA for high-speed across-node connection.</p>
-      </div>
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/cloud-agnostic.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>Cloud Agnostic</h3>
-        <p>Piraeus can run on all kinds of storage medium: RAID, SAN, NAS or EBS. It unifies storage system across different clouds, both public and private.</p>
-      </div>
-      
-      <div class="col col-4 item">
-        <figure class="item-figure">
-          <img alt="icon" src=/img/kube/secure.png style="width: 64px;height:64px;">
-        </figure>
-        <h3>Secure</h3>
-        <p>Fully supports OpenSSL encryption and LDAP authentication. Also provides data encryption at DRBD level. Integrates secret-key management with KVDB, AWS-KMS and Azure Key-Vault.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-</div>
-</main>
-  <footer>   <footer id="footer">
-    
-    <p>&copy; Licence Apache.</p>
-    <nav>
-      <a id="linbit" href="https://www.linbit.com/en/"></a>
-      <a id="daocloud" href="https://www.daocloud.io/"></a>
-    </nav>
-  </footer> </footer>
-
+    </footer>
+  </footer>
 
   <script src="/js/kube.js" type="text/javascript">
   </script>
   <script src="/js/kube.legenda.js" type="text/javascript">
   </script>
   <script src="/js/master.js" type="text/javascript">
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#kube-features .item").click(function(){
+        var width = $(window).width();
+        if (width <= 480) {
+          $("#kube-features .item").removeClass('active');
+          $(this).addClass('active');
+        }
+      });
+    });
   </script>
 </body>
 
