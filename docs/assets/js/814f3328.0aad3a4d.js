@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[631],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Federated AI and Piraeus Storage","permalink":"/blog/1"}]}')}}]);
